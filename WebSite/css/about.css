@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+.info {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  margin: auto;
+}
+
+.info-wrapper {
+  padding: 10px;
+}
+
+.meyor,
+.mardi {
+  border: 3px solid #9453a6;
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+.photo {
+  height: 500px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linka {
+  margin: auto;
+  margin-top: 20px;
+  color: #0d0d0d;
+  background-color: #9453a6;
+  border: 1px solid #9453a6;
+  border-radius: 10px;
+  text-align: center;
+  width: 60%;
+}
+
+.linka a {
+  color: #0d0d0d;
+  text-decoration: none;
+  font-size: 24pt;
+}
+
+@media (max-width: 768px) {
+  .info {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    margin: auto;
+  }
+}

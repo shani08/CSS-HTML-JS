@@ -1,0 +1,39 @@
+/* Akordion FAQ */
+
+.qu {
+  background-color: #8cbf3f;
+  color: #0d0d0d;
+  font-size: 20pt;
+  border: 3px solid #f2f2f2;
+  text-align: center;
+  font-family: "Pattaya", sans-serif;
+  width: 100%;
+  cursor: pointer;
+}
+
+.an {
+  background-color: #f2cc0f;
+  color: #0d0d0d;
+  font-size: 20pt;
+  border: 3px solid #0d0d0d;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  cursor: pointer;
+  display: none;
+}
+
+.qu:hover .an {
+  display: block;
+}
+
+.abtn {
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #0d0d0d;
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+  font-family: "Roboto", sans-serif;
+  font-size: 12pt;
+}

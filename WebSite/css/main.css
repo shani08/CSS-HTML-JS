@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0d0d;
+}
+
+.mini-header {
+  font-size: 40pt;
+  color: #8cbf3f;
+  text-align: center;
+  font-family: "Henny Penny", sans-serif;
+}
+
+/* navbar */
+
+.header nav,
+.hamburger {
+  width: 100%;
+  height: 50px;
+  background-color: #f2cc0f;
+  counter-reset: #0d0d0d;
+  box-shadow: #0d0d0d;
+}
+
+.header nav {
+  width: 100%;
+  height: 50px;
+  background-color: #9454a6;
+}
+
+.hamburger {
+  display: none;
+}
+
+.header ul {
+  list-style-type: none;
+}
+
+.header li {
+  float: left;
+  width: 20%;
+}
+
+.header ul li a {
+  padding: 5px 15px;
+  display: block;
+  text-decoration: none;
+  line-height: 1;
+  color: #f2cc0f;
+  text-align: center;
+  font-size: 28pt;
+  width: 100%;
+  border: 3px solid #f2f2f2;
+  font-family: "Pattaya", sans-serif;
+}
+
+.header ul li a:hover {
+  background-color: #f2cc0f;
+  color: #9453a6;
+  font-family: "Pattaya", sans-serif;
+}
+
+/* Slideshow */
+
+.smcontainer {
+  display: none;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.carousel-img {
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  border: 3px solid #f2f2f2;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2cc0f;
+  font-family: "Pattaya", sens-serif;
+  font-size: 40pt;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  position: relative;
+  background-color: #9453a6;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #f2f2f2;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* sponsers */
+
+
+.sponsers-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+  margin: auto;
+  padding: 10px;
+}
+
+.box {
+  text-align: center;
+  height: 800px;
+  width: 100%;
+  border: solid 5px #9453a6;
+  border-radius: 20px;
+}
+
+.box-img {
+  height: 40%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.text-wrapper{
+height: 60%;
+  background: #9453a6;
+  padding: 1rem;
+  border-radius: 20px;
+  
+}
+
+.box-text {
+  height: 80%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background: #8cbf3f;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.btn {
+  height: 7%;
+  margin: auto;
+  margin-top: 40px;
+  width: 60%;
+  border-radius: 30px;
+  background-color: #8cbf3f;
+  border: 1px solid #0d0d0d;
+}
+
+.btn a {
+  
+  color: #0d0d0d;
+  text-decoration: none;
+  font-size: 16pt;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  background-color: #9454a6;
+}
+
+.footer nav {
+  width: 100%;
+  height: 50px;
+}
+
+.footer .copyright {
+  height: 25px;
+}
+
+.footer div p {
+  text-align: center;
+  font-family: "Roboto", sens-serif;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer li {
+  width: 20%;
+  float: left;
+}
+
+.footer ul li a {
+  padding: 5px 15px;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1;
+  color: #f2cc0f;
+  text-align: center;
+  width: 100%;
+  font-size: 20pt;
+  border: 3px solid #f2f2f2;
+  font-family: "Pattaya", sans-serif;
+}
+
+.footer ul li a:hover {
+  background-color: #f2cc0f;
+  color: #9453a6;
+  font-family: "Pattaya", sans-serif;
+}
+
+.footer img {
+  height: 150px;
+}
+
+.footer .footer-pic {
+  text-align: center;
+}
+
+/* social media icons */
+.footer .social-media {
+  text-align: center;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .header nav ul li a {
+    color: #9453a6;
+  }
+  .hamburger {
+    display: block;
+    font-size: 24pt;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+  }
+
+  .header nav li {
+    clear: both;
+    width: 100%;
+  }
+
+  .header nav li a {
+    background-color: #f2cc0f;
+
+    border: 1px solid #0d0d0d;
+    width: 100%;
+  }
+
+  ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+  }
+
+  .show-menu {
+    display: block;
+  }
+
+  /* Slideshow */
+
+  .slideshow-container {
+    display: none;
+  }
+
+  .smcontainer {
+    display: block;
+  }
+
+  .smcontainer img {
+    height: 250px;
+    width: 100%;
+
+    border-radius: 20px;
+    border: 3px solid #f2f2f2;
+  }
+
+  /* Caption text */
+  .text {
+    color: #9453a6;
+    font-size: 24pt;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 18px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  /* sponsers */
+
+  .sponsers-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    margin: auto;
+  }
+
+  .box{
+    height: 150vh;
+  }
+
+  .text-wrapper{
+   height: 60%;
+  }
+
+  .box-text{
+    height: 80%;
+  }
+  
+  .btn {
+    
+    margin: auto;
+    margin-top: 30px;
+    height: 5%;
+    width: 85%;
+    border-radius: 30px;
+    background-color: #8cbf3f;
+    color: #0d0d0d;
+    border: 1px solid #0d0d0d;
+  }
+
+  .btn a {
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    font-size: 10pt;
+  }
+
+
+}
